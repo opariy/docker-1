@@ -1,0 +1,9 @@
+First execute:
+	docker run -it ubuntu bash
+
+Then in the opened terminal execute:
+	apt-get update
+	apt-get upgrade
+	apt-get install -y build-essential
+	apt-get install -y vim
+	apt-get install -y git

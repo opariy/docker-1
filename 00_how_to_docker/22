@@ -1,0 +1,11 @@
+Execute:
+	docker-machine create Char -d "virtualbox" 
+	eval "$(docker-machine env Char)"
+	docker swarm init --advertise-addr $(docker-machine ip Char)
+	docker swarm join-token worker  => copy this command
+
+Open a new terminal window:
+	docker-machine create Aiur -d "virtualbox"
+	eval "$(docker-machine env Aiur)"
+	paste the copied command
+
